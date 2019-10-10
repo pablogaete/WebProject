@@ -1,0 +1,12 @@
+.card {
+    margin: 0 auto;
+    float: none;
+}
+
+section#feature {
+    background-color: #181818;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
