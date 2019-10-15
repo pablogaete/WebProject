@@ -1,12 +1,259 @@
-.card {
+.jumbotron {
+    background-color: #28a745;
+    color: #fff;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.jumbotron hr {
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+section#feature div.line-detail:before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100px;
+    margin: 10px auto 15px;
+    border: #28a745 4px solid;
+    left: -95px;
+}
+
+section#feature .card {
+    color: #fff;
+    background-color: #120717;
     margin: 0 auto;
     float: none;
 }
 
 section#feature {
-    background-color: #181818;
+    background-color: #18121d;
 }
 
-.jumbotron {
-    margin-bottom: 0;
+section#monster-energy-drink {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    padding: 250px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, .3)), url("file:///D:/Im%C3%A1genes/Wallpapers/Dota 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#monster-energy-drink div.overlay {
+    background-color: rgba(0,0,0,.1);
+}
+
+section.customer-logos {
+    background-color: #d22c71;
+}
+
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+footer {
+    background-color: #18121d;
+    color: #bbb;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 409px;
+    overflow: hidden;
+}
+
+footer .logo {
+    position: relative;
+    display: block;
+    width: 110px;
+    margin: 50px auto 0;
+}
+
+
+footer div.arrow-up {
+    position: relative;
+    color: white;
+    font-size: 2.2rem;
+    margin: 0 auto;
+    padding-top: 25px;
+    height: 80px;
+    width: 270px;
+    text-align: center;
+}
+
+footer div.arrow-up a.page-scroll i.fas.fa-chevron-up {
+    color: red;
+    transition: all 250ms ease-in-out;
+    transform: scale(1.2);
+}
+
+footer div.arrow-up::before {
+    content: '';
+    position: absolute;
+    top:0;
+    display: block;
+    width: 100px;
+    border: #28a745 4px solid;
+    left: 85px;
+}
+
+footer .fa-chevron-up::before {
+    content: '\f077';
+}
+
+footer div.text {
+    position: relative;
+    margin-top: 30px;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+footer div.arrow-up a.page-scroll {
+    color: white;
+}
+
+footer h5 {
+    color:#28a745;
+    margin-bottom: 30px;
+}
+
+footer ul li {
+    display:inline-block;
+    margin: 0 20px;
+}
+
+footer ul li a {
+    color: #bbb;
+}
+footer ul li a:hover {
+    color: #28a745;
+    text-decoration: none;
 }

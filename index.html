@@ -7,90 +7,181 @@
 
     <title>Mi proyecto web con Bootstrap</title>
 
+    <link href="../WebProject/css/bootstrap.css" rel=stylesheet>
     <link href="../WebProject/css/bootstrap.min.css" rel=stylesheet>
     <link href="style.css" rel=stylesheet>
+    <link href="../WebProject/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../WebProject/css/animate.css">
 
     <script type="text/javascript" src="../WebProject/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../WebProject/fontawesome/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../WebProject/js/util.js"></script>
+    <script type="text/javascript" src="../WebProject/js/smooth-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                auseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">4ºC</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">4ºC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Quiénes somos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Notas
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-            </div>
-        </nav>
-
-        <div class="jumbotron container-fluid">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quiénes somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
         </div>
+    </nav>
 
-        <section id="feature" class="py-5">
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+    <div class="jumbotron container-fluid">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    </div>
+
+    <section id="feature" class="container-fluid py-5">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="line-detail"></div>
+                <div class="card animated shake" style="width: 18rem;">
+                    <img src="file:///D:/Im%C3%A1genes/Wallpapers/abstract/abstract-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-success">Go somewhere</a>
                     </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.pexels.com/photos/1418116/pexels-photo-1418116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>    
                 </div>
             </div>
-        </section>
-    </div>
+            <div class="col-xl-4">
+                <div class="line-detail"></div>
+                <div class="card" style="width: 18rem;">
+                    <img src="file:///D:/Im%C3%A1genes/Wallpapers/abstract/abstract-11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="line-detail"></div>
+                <div class="card" style="width: 18rem;">
+                    <img src="file:///D:/Im%C3%A1genes/Wallpapers/abstract/abstract-10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <section id="monster-energy-drink" class="container-fluid text-center">
+        <h1>THE BEST OF THE WORLD IS HERE</h1>
+        <p>
+            Proin nunc diam, tincidunt ac auctor ac, hendrerit eget elit. Aliquam scelerisque quis justo non sollicitudin. Aliquam non purus convallis, sodales turpis at, varius tortor.
+        </p>
+    </section>
+
+    <section class="customer-logos slider py-4">
+        <div class="slide"><img class="img-fluid" src="../WebProject/img/logo-1.png"></div>
+        <div class="slide"><img class="img-fluid" src="../WebProject/img/logo-2.png"></div>
+        <div class="slide"><img class="img-fluid" src="../WebProject/img/logo-3.png"></div>
+        <div class="slide"><img class="img-fluid" src="../WebProject/img/logo-4.png"></div>
+        <div class="slide"><img class="img-fluid" src="../WebProject/img/logo-5.png"></div>
+        <div class="slide"><img class="img-fluid" src="../WebProject/img/logo-6.png"></div>
+        <div class="slide"><img class="img-fluid" src="../WebProject/img/logo-7.png"></div>
+        <div class="slide"><img class="img-fluid" src="../WebProject/img/logo-8.png"></div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <div>
+                    <div class="arrow-up">
+                        <a class="page-scroll" href="#main-nav">
+                            <i class="fas fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <img class="logo" src="img/logo.svg" alt="">
+                <div class="text">® El profesor Pablo Gaete |  Todos los derechos reservados</div>
+            </div>
+            <div class="col-lg-4 my-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="text-center">
+                            <img src="file:///D:/Im%C3%A1genes/Wallpapers/Backgrounds/no_matches_by_lacza_dcbux4v.jpg" class="img-fluid" alt="">
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            Proin nunc diam, tincidunt ac auctor ac, hendrerit eget elit. Aliquam scelerisque quis justo non sollicitudin. Aliquam non purus convallis, sodales turpis at, varius tortor. Aliquam scelerisque quis justo non sollicitudin. Aliquam non purus convallis, sodales turpis at, varius tortor. Proin nunc diam, tincidunt ac auctor ac, hendrerit eget elit. Aliquam scelerisque quis justo non sollicitudin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 my-5 text-center">
+                <h5>Links de interés</h5>
+                <ul>
+                    <li>
+                        <a href="#">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="#">Tendencias</a>
+                    </li>
+                    <li>
+                        <a href="#">Innovación</a>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
