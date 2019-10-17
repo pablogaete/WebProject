@@ -34,7 +34,7 @@ section#monster-energy-drink {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
     padding: 250px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, .3)), url("file:///D:/Im%C3%A1genes/Wallpapers/Dota 2.jpg");
+    background-image: linear-gradient(rgba(64, 36, 117, 0.5), rgba(134, 35, 113, 0.3)), url("../WebProject/img/monster.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

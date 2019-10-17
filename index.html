@@ -17,32 +17,9 @@
     <script type="text/javascript" src="../WebProject/fontawesome/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="../WebProject/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="../WebProject/js/carousel.js"></script>
+    <script type="text/javascript" src="../WebProject/js/wow.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.customer-logos').slick({
-                slidesToShow: 6,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1000,
-                arrows: false,
-                dots: false,
-                auseOnHover: false,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                }, {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                }]
-            });
-        });
-    </script>
 </head>
 <body>
     <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light">
@@ -79,17 +56,17 @@
     </nav>
 
     <div class="jumbotron container-fluid">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 class="display-4 wow animated fadeInRightBig">Hello, world!</h1>
+        <p class="lead wow animated fadeInRightBig slow">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="wow animated fadeInRightBig slower">It uses utility classes for typography and spacing to space content out within the larger container.</p>
     </div>
 
     <section id="feature" class="container-fluid py-5">
         <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 wow animated bounceInLeft">
                 <div class="line-detail"></div>
-                <div class="card animated shake" style="width: 18rem;">
+                <div class="card" style="width: 18rem;">
                     <img src="file:///D:/Im%C3%A1genes/Wallpapers/abstract/abstract-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -98,9 +75,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 wow animated bounceInLeft slow">
                 <div class="line-detail"></div>
-                <div class="card" style="width: 18rem;">
+                <div class="card animated" style="width: 18rem;">
                     <img src="file:///D:/Im%C3%A1genes/Wallpapers/abstract/abstract-11.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -109,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 wow animated bounceInLeft slower">
                 <div class="line-detail"></div>
                 <div class="card" style="width: 18rem;">
                     <img src="file:///D:/Im%C3%A1genes/Wallpapers/abstract/abstract-10.jpg" class="card-img-top" alt="...">
@@ -124,8 +101,8 @@
     </section>
 
     <section id="monster-energy-drink" class="container-fluid text-center">
-        <h1>THE BEST OF THE WORLD IS HERE</h1>
-        <p>
+        <h1 class="wow animated fadeInUp slow">THE BEST OF THE WORLD IS HERE</h1>
+        <p class="wow animated fadeInUp slower">
             Proin nunc diam, tincidunt ac auctor ac, hendrerit eget elit. Aliquam scelerisque quis justo non sollicitudin. Aliquam non purus convallis, sodales turpis at, varius tortor.
         </p>
     </section>
@@ -151,7 +128,7 @@
                         </a>
                     </div>
                 </div>
-                <img class="logo" src="img/logo.svg" alt="">
+                <img class="logo wow animated jackInTheBox" src="img/logo.svg" alt="">
                 <div class="text">® El profesor Pablo Gaete |  Todos los derechos reservados</div>
             </div>
             <div class="col-lg-4 my-5">
@@ -184,4 +161,7 @@
         </div>
     </footer>
 </body>
+<script>
+    new WOW().init();
+</script>
 </html>
